@@ -1,8 +1,8 @@
 # SPY Options Data Exploration
 
-An end-to-end exploratory analysis of the full SPY option chain over five trading days (Aug 1–5, 2022), covering data cleaning, liquidity, the implied-volatility surface, Greeks, implied forwards, and straddle outcomes. Everything in the notebook is reproducible from the included CSV using only pandas, numpy, and matplotlib.
+Exploratory analysis of the full SPY option chain over five trading days (Aug 1–5, 2022): data cleaning, liquidity, the implied-volatility surface, Greeks, implied forwards, and straddle outcomes. Everything is reproducible from the included CSV using only pandas, numpy, and matplotlib.
 
-**[Open the notebook →](options_notebook.ipynb)** (figures are embedded, so it renders directly on GitHub.)
+The full analysis is in [options_notebook.ipynb](options_notebook.ipynb); figures are embedded, so it renders directly on GitHub.
 
 ## Dataset
 
@@ -15,8 +15,8 @@ An end-to-end exploratory analysis of the full SPY option chain over five tradin
 
 ## Notebook contents
 
-| # | Section | What it shows |
-|---|---------|---------------|
+| # | Section | Contents |
+|---|---------|----------|
 | 1 | Data cleaning | Header/text normalization, numeric coercion, quote-size parsing, an IV sanity screen with a reproducible audit of masked values |
 | 2 | Market overview | Daily closes and the put/call volume ratio |
 | 3 | Volume concentration | 41% of volume expires within one day; ±12% moneyness captures 93% of volume |
@@ -27,7 +27,7 @@ An end-to-end exploratory analysis of the full SPY option chain over five tradin
 | 8 | Greeks near the money | ATM gamma and theta by maturity; delta/gamma across a ±6% strike window |
 | 9 | Implied forwards | Forward curve from put–call parity, with a zoom on the Aug–Oct carry adjustment |
 | 10 | Straddle break-evens | Exact asymmetric break-even ranges and the realized expiration payoff |
-| 11 | Conclusions | Plain-language synthesis of the results and why they matter |
+| 11 | Conclusions | Summary of the results |
 
 ## Running it
 
